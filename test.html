@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>K3320-NesgO</title>
+        <script type="text/javascript">
+            var imset;
+            function foo(im, imset) {
+                 switch (imset) {
+                    case 1: 
+                 { im.setAttribute("src", "images/cent1.png"); break;}
+                    case 2:
+                 {im.setAttribute("src", "images/driad.jpg"); break;}
+                    default:
+                 { alert('Default!'); break;}
+                 }
+            }
+             
+        </script>
+      </head>
+    <body>
+    <h1 onmouseover = "imset=1; foo(im, imset);" onmouseout="imset=2; foo(im, imset);">TEST</h1>
+    <img id="image" style="height:70%; position: relative; right:150px;" src="images/driad.jpg">
+    <script type="text/javascript">var im = document.getElementById('image');  </script>
+    </body>
+    <!--
+<img style="height:100%; position: relative; right:150px;" src="images/driad.jpg" onmouseover = "imset=1; foo(this, imset);" onmouseout="imset=2; foo(this, imset);">
+ var im=document.getElementsByTagName('img');
+             function handlerOver(imset) {
+                 switch (im, imset) {
+                    case 1: 
+                 { im.hasattribute=0.3; break;}
+                    case 2:
+                 { im.style.opacity=1; break;}
+                    default:
+                 { document.body.style.backgroundColor = "url(images/forest.jpg)"; break;}
+                 }
+             }
+             function handlerOver(imset) {
+                 switch (imset) {
+                    case '1': 
+                 { document.body.style.backgroundImage = "url(images/forest.jpg)"; break;}
+                    case '2':
+                 { document.body.style.backgroundImage = "url(images/meadows.jpg);"; break;}
+                    default:
+                 { document.body.style.backgroundImage = "url(images/meadows.jpg);"; break;}
+                 }
+             }
+!-->
+</html>
